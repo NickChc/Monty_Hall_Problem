@@ -113,7 +113,7 @@ doors.forEach((door) => {
             localStorage.setItem("correct", correctCount);
             totalText.textContent = `TOTAL TRIES: ${totalCount}`;
             correctText.textContent = `CORRECT GUESSES: ${correctCount}`;
-            text.style.color = "green";
+            text.style.color = "darkgreen";
             text.textContent = `you have won this time, congratulations! :)`;
           } else if (door !== winner) {
             totalCount++;

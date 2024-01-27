@@ -6,7 +6,7 @@
 
 .all-father {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #6b6b6b;
   color: #2b2b2b;
 
@@ -27,42 +27,22 @@
   justify-content: space-evenly;
 }
 
-@media (max-width: 600px) {
-  .main-wrapper {
-    margin-top: 40%;
-  }
-}
+.text-wrapper {
+  width: 100%;
+  padding: 24px;
+  margin-top: 40px;
 
-  .text-wrapper {
-    position: fixed;
-    bottom: 200px;
-  }
+  display: block;
+  align-items: center;
+  justify-content: center;
 
-@media (max-width: 600px) {
-  .text-wrapper {
-    width: 100%;
-    padding: 24px;
-    margin-top: 40px;
-
-    display: block;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    bottom: 150px;
-  }
-}
-
-#text {
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
+  /* position: fixed;
+  bottom: 150px; */
 }
 
 .door {
   width: 17.5%;
-  min-height: 45vh;
+  height: 40vh;
   cursor: pointer;
   border: solid 1px black;
 
@@ -72,9 +52,29 @@
 }
 
 @media (max-width: 600px) {
-  .door {
-    min-height: 30vh;
+  body {
+    font-size: .9em;
   }
+
+  .text-wrapper {
+    position: fixed;
+    bottom: 10em;
+  }
+
+  .main-wrapper {
+    margin-top: 10em;
+  }
+
+  .door {
+    height: 20vh;
+  }
+}
+
+#text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .door:hover {
